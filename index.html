@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ararat Barseghyan</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <h2 class="name">Ararat Barseghyan</h2>
+        <nav class="navbar">
+          <button onclick="navigate(1)" id="home_nav" class="navbar__el">
+            Home
+          </button>
+          <button onclick="navigate(2)" id="about_nav" class="navbar__el">
+            About me
+          </button>
+          <button onclick="navigate(3)" id="projects_nav" class="navbar__el">
+            Projects
+          </button>
+          <button onclick="navigate(4)" id="contact_nav" class="navbar__el">
+            Contact
+          </button>
+        </nav>
+      </div>
+      <div class="navbarMobile">
+        <nav>
+          <span id="circle"></span>
+          <button onclick="navigateMobile(1)">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                width="24"
+                height="24"
+                d="M1 10.5256L10.4993 3.49031C11.382 2.83656 12.618 2.83656 13.5007 3.49031L23 10.5256M4.66667 8.19795V18.6724C4.66667 19.9579 5.76108 21 7.11111 21H16.8889C18.2389 21 19.3333 19.9579 19.3333 18.6724V8.19795"
+                stroke="#fff"
+              />
+            </svg>
+          </button>
+          <button onclick="navigateMobile(2)">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                width="24"
+                height="24"
+                d="M12 14C14.7614 14 17 11.7614 17 9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9C7 11.7614 9.23858 14 12 14ZM12 14C7.58172 14 4 16.6863 4 20M12 14C16.4183 14 20 16.6863 20 20"
+                stroke="#fff"
+              />
+            </svg>
+          </button>
+          <button onclick="navigateMobile(3)">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                width="24"
+                height="24"
+                d="M2 10H22M2 18V6C2 4.89543 2.89543 4 4 4H7.17157C7.70201 4 8.21071 4.21071 8.58579 4.58579L9.41421 5.41421C9.78929 5.78929 10.298 6 10.8284 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18Z"
+                stroke="#fff"
+              />
+            </svg>
+          </button>
+          <button onclick="navigateMobile(4)">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                width="24"
+                height="24"
+                d="M3 5L10.7721 11.045C11.4943 11.6067 12.5057 11.6067 13.2279 11.045L21 5M5.2 20H18.8C19.9201 20 20.4802 20 20.908 19.782C21.2843 19.5903 21.5903 19.2843 21.782 18.908C22 18.4802 22 17.9201 22 16.8V7.2C22 6.0799 22 5.51984 21.782 5.09202C21.5903 4.71569 21.2843 4.40973 20.908 4.21799C20.4802 4 19.9201 4 18.8 4H5.2C4.07989 4 3.51984 4 3.09202 4.21799C2.71569 4.40973 2.40973 4.71569 2.21799 5.09202C2 5.51984 2 6.07989 2 7.2V16.8C2 17.9201 2 18.4802 2.21799 18.908C2.40973 19.2843 2.71569 19.5903 3.09202 19.782C3.51984 20 4.0799 20 5.2 20Z"
+                stroke="#fff"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section id="home">
+      <div class="home__info">
+        <h3>Hello, I'm</h3>
+        <h2>Ararat Barseghyan</h2>
+        <p>
+          I'm an <span>Junior fullstack and mobile developer.</span> I create
+          seamless web and mobile experiences for end-users
+        </p>
+        <div class="home__btn">
+          <button onclick="navigate(2)" class="about__btn">
+            About me
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 10C12.3012 10 14.1667 8.13452 14.1667 5.83333C14.1667 3.53214 12.3012 1.66666 10 1.66666C7.69882 1.66666 5.83334 3.53214 5.83334 5.83333C5.83334 8.13452 7.69882 10 10 10Z"
+                fill="white"
+              />
+              <path
+                d="M9.99999 12.0833C5.82499 12.0833 2.42499 14.8833 2.42499 18.3333C2.42499 18.5667 2.60832 18.75 2.84165 18.75H17.1583C17.3917 18.75 17.575 18.5667 17.575 18.3333C17.575 14.8833 14.175 12.0833 9.99999 12.0833Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button onclick="navigate(3)" class="projects__btn">
+            Projects
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.7083 7.625C15.7833 4.6 12.9667 2.85834 9.99999 2.85834C8.51666 2.85834 7.07499 3.29167 5.75832 4.1C4.44166 4.91667 3.25832 6.10834 2.29166 7.625C1.45832 8.93334 1.45832 11.0583 2.29166 12.3667C4.21666 15.4 7.03332 17.1333 9.99999 17.1333C11.4833 17.1333 12.925 16.7 14.2417 15.8917C15.5583 15.075 16.7417 13.8833 17.7083 12.3667C18.5417 11.0667 18.5417 8.93334 17.7083 7.625ZM9.99999 13.3667C8.13332 13.3667 6.63332 11.8583 6.63332 10C6.63332 8.14167 8.13332 6.63334 9.99999 6.63334C11.8667 6.63334 13.3667 8.14167 13.3667 10C13.3667 11.8583 11.8667 13.3667 9.99999 13.3667Z"
+                fill="white"
+              />
+              <path
+                d="M10 7.61667C8.69167 7.61667 7.625 8.68334 7.625 10C7.625 11.3083 8.69167 12.375 10 12.375C11.3083 12.375 12.3833 11.3083 12.3833 10C12.3833 8.69167 11.3083 7.61667 10 7.61667Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="home__img"><img src="img/mypic.png" alt="" /></div>
+    </section>
+    <section id="about">
+      <div class="aboutMe">
+        <h2 class="aboutMe__title">About me:</h2>
+        <p class="aboutMe__body">
+          As a junior frontend programmer, I am a curious and enthusiastic
+          learner with a passion for coding and web development. I am committed
+          to building user-friendly interfaces that enhance the overall user
+          experience. I possess a strong foundation in HTML, CSS, and
+          JavaScript, and I am constantly expanding my knowledge through online
+          courses and coding challenges. Although I am a junior frontend
+          programmer with no professional experience, I am eager to gain
+          hands-on experience and continue honing my skills.
+        </p>
+      </div>
+      <div class="aboutSkills">
+        <div>
+          <img src="icons/ruler&pen.png" alt="" />
+          <h3>UI & UX DESIGNING</h3>
+          <span>I design beautiful web iterfaces with Figma and Adobe XD</span>
+        </div>
+        <div>
+          <img src="icons/javascript.png" alt="" />
+          <h3>WEB DEVELOPMENT</h3>
+          <span
+            >I create iterfaces with HTML, CSS, & JavaScript and also frameworks
+            like Angular and ReactJS</span
+          >
+        </div>
+        <div>
+          <img src="icons/android.png" alt="" />
+          <h3>MOBILE DEVELOPMENT</h3>
+          <span
+            >I am an expert mobile developer. I have experience using Flutter
+            and React Native.</span
+          >
+        </div>
+      </div>
+    </section>
+    <section id="projects"></section>
+    <section id="contact"></section>
+  </body>
+  <script type="text/javascript" src="scripts/script.js"></script>
+</html>
